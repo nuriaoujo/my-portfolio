@@ -25,7 +25,7 @@ ul {
     list-style: none;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -203,6 +203,137 @@ img {
                         color: set-text-color($dark-color);
                     }
                 }
+            }
+        }
+    }
+}
+
+// About sections
+#about {
+    &-a {
+        .about-info {
+            display: grid;
+            grid-template-areas:
+                'bioimage bio bio'
+                'aw1 aw2 aw3';
+            grid-gap: 1.2rem;
+        }
+
+        // Grid Area
+        .bio-image {
+            margin: auto;
+            width: 220px;
+            border-radius: 50%;
+            grid-area: bioimage;
+        }
+
+        .bio {
+            grid-area: bio;
+            border-left: 3px solid $main-color;
+            padding: 0.8rem;
+            text-align: left;
+            padding: 30px;
+        }
+
+        .award-1 {
+            grid-area: aw1;
+        }
+
+        .award-2 {
+            grid-area: aw2;
+        }
+
+        .award-3 {
+            grid-area: aw3;
+        }
+
+        .award-1 .fas,
+        .award-2 .fas,
+        .award-3 .fas {
+            color: $main-color;
+            margin: 1rem;
+        }
+    }
+
+    // About B
+
+    &-b {
+        .technologies {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+
+            &-column {
+                margin: 30px;
+
+                h3 {
+                    text-align: center;
+                    margin-bottom: 0.8rem;
+                }
+
+                h4 {
+                    font-weight: 300;
+                }
+            }
+        }
+        .progress {
+            overflow: hidden;
+            height: 20px;
+            background: $medium-color;
+            border-radius: 5px;
+            margin-bottom: 0.8rem;
+
+            div {
+                height: 100%;
+                color: $light-color;
+                text-align: center;
+                background-color: $main-color;
+            }
+        }
+    }
+
+    // About C
+    &-c {
+        .education {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 0.5rem;
+
+            ul {
+                list-style: none;
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+            }
+
+            p {
+                border: 1px solid $medium-color;
+                border-radius: 5px;
+                padding: 0.5rem;
+                min-height: 80px;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 0.5rem;
+            }
+
+            li {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    // About D
+    &-d {
+        .about-courses {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+
+            img {
+                width: 70%;
             }
         }
     }

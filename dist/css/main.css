@@ -35,6 +35,22 @@
     border: 3px solid #0F2C59;
     background-color: transparent; }
 
+.bg-main {
+  background-color: #DAB88B;
+  color: #0F2C59; }
+
+.bg-dark {
+  background-color: #0F2C59;
+  color: #FDF6EC; }
+
+.bg-light {
+  background-color: #FDF6EC;
+  color: #0F2C59; }
+
+.bg-medium {
+  background-color: #F3E9DD;
+  color: #0F2C59; }
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem; }
@@ -108,7 +124,7 @@ a {
 ul {
   list-style: none; }
 
-h1 {
+h1, h2 {
   font-family: 'Fira Sans', sans-serif; }
 
 h2, h3, h4 {
@@ -222,6 +238,91 @@ img {
       #home-c .process-icon:hover .process-step {
         background: #0F2C59;
         color: #FDF6EC; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-gap: 1.2rem; }
+
+#about-a .bio-image {
+  margin: auto;
+  width: 220px;
+  border-radius: 50%;
+  grid-area: bioimage; }
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #DAB88B;
+  padding: 0.8rem;
+  text-align: left;
+  padding: 30px; }
+
+#about-a .award-1 {
+  grid-area: aw1; }
+
+#about-a .award-2 {
+  grid-area: aw2; }
+
+#about-a .award-3 {
+  grid-area: aw3; }
+
+#about-a .award-1 .fas,
+#about-a .award-2 .fas,
+#about-a .award-3 .fas {
+  color: #DAB88B;
+  margin: 1rem; }
+
+#about-b .technologies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  #about-b .technologies-column {
+    margin: 30px; }
+    #about-b .technologies-column h3 {
+      text-align: center;
+      margin-bottom: 0.8rem; }
+    #about-b .technologies-column h4 {
+      font-weight: 300; }
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #F3E9DD;
+  border-radius: 5px;
+  margin-bottom: 0.8rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #FDF6EC;
+    text-align: center;
+    background-color: #DAB88B; }
+
+#about-c .education {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem; }
+  #about-c .education ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center; }
+  #about-c .education p {
+    border: 1px solid #F3E9DD;
+    border-radius: 5px;
+    padding: 0.5rem;
+    min-height: 80px; }
+  #about-c .education img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem; }
+  #about-c .education li {
+    font-size: 0.9rem; }
+
+#about-d .about-courses {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+  #about-d .about-courses img {
+    width: 70%; }
 
 #main-footer {
   background: #0F2C59;
