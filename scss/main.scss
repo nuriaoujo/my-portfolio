@@ -163,6 +163,7 @@ img {
                 right: 0;
                 font-size: 28px;
                 background: $main-color;
+                color: set-text-color($main-color);
                 border-radius: 50%;
                 height: 15px;
                 width: 15px;
@@ -176,7 +177,7 @@ img {
             &-icon {
                 border-radius: 50%;
                 background: $dark-color;
-                color: $light-color;
+                color: set-text-color($dark-color);
                 padding: 2rem;
                 width: 70px;
                 height: 70px;
@@ -194,10 +195,44 @@ img {
 
                     .process-step {
                         background: $dark-color;
+                        color: set-text-color($dark-color);
                     }
                 }
             }
         }
+    }
+}
+
+// Footer
+#main-footer {
+    background: $dark-color;
+    color: $light-color;
+    height:220px;
+    padding-top: 40px;
+    font-size: 0.8rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    height: 220px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.social {
+    .icon {
+    margin: 0.5rem 1rem;
+    align-items: center;
+    }
+    
+    & span:hover {
+        color: $contrast-color;
+        cursor: pointer;
     }
 }
 

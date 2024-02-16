@@ -189,6 +189,7 @@ img {
     right: 0;
     font-size: 28px;
     background: #DAB88B;
+    color: #0F2C59;
     border-radius: 50%;
     height: 15px;
     width: 15px;
@@ -212,4 +213,29 @@ img {
       height: 90px;
       line-height: 90px; }
       #home-c .process-icon:hover .process-step {
-        background: #0F2C59; }
+        background: #0F2C59;
+        color: #FDF6EC; }
+
+#main-footer {
+  background: #0F2C59;
+  color: #FDF6EC;
+  height: 220px;
+  padding-top: 40px;
+  font-size: 0.8rem; }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  height: 220px; }
+  .footer-content div {
+    display: flex;
+    flex-direction: column; }
+
+.social .icon {
+  margin: 0.5rem 1rem;
+  align-items: center; }
+
+.social span:hover {
+  color: #B7CADB;
+  cursor: pointer; }
