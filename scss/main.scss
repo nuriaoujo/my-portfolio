@@ -38,33 +38,46 @@ img {
 }
 
 // Main Nav
-#main-nav {
+#main {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     padding-top: 1rem;
+    text-transform: uppercase;
 
-    ul {
+    &-logo {
         display: flex;
-    }
-
-    li {
         padding: 1rem 1.5rem;
+        color: $light-color;
     }
 
-    a {
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-        border-bottom: 3px transparent solid;
-        padding-bottom: 0.5rem;
-        transition: border-color 0.5s;
-
-        &:hover {
-            border-color: $medium-color;
+    &-nav {
+        display: flex;
+        justify-content: flex-end;
+        
+    
+        ul {
+            display: flex;
         }
-
-        &.current {
-            border-color: $main-color;
+    
+        li {
+            padding: 1rem 1.5rem;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $light-color;
+            border-bottom: 3px transparent solid;
+            padding-bottom: 0.5rem;
+            transition: border-color 0.5s;
+    
+            &:hover {
+                border-color: $medium-color;
+            }
+    
+            &.current {
+                border-color: $main-color;
+            }
         }
     }
 }

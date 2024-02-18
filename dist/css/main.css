@@ -141,25 +141,33 @@ h2, h3, h4 {
 img {
   width: 100%; }
 
-#main-nav {
+#main {
   display: flex;
-  justify-content: flex-end;
-  padding-top: 1rem; }
-  #main-nav ul {
-    display: flex; }
-  #main-nav li {
-    padding: 1rem 1.5rem; }
-  #main-nav a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-    padding-bottom: 0.5rem;
-    transition: border-color 0.5s; }
-    #main-nav a:hover {
-      border-color: #F3E9DD; }
-    #main-nav a.current {
-      border-color: #DAB88B; }
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+  text-transform: uppercase; }
+  #main-logo {
+    display: flex;
+    padding: 1rem 1.5rem;
+    color: #FDF6EC; }
+  #main-nav {
+    display: flex;
+    justify-content: flex-end; }
+    #main-nav ul {
+      display: flex; }
+    #main-nav li {
+      padding: 1rem 1.5rem; }
+    #main-nav a {
+      text-decoration: none;
+      color: #FDF6EC;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.5s; }
+      #main-nav a:hover {
+        border-color: #F3E9DD; }
+      #main-nav a.current {
+        border-color: #DAB88B; }
 
 #header-home {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 90%), url("../img/background.svg");
