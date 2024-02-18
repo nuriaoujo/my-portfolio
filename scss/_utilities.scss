@@ -48,6 +48,7 @@
         &:hover {
             border: 3px solid $dark-color;
             background-color: transparent;
+            color: $dark-color;
         }
     }
 }
@@ -125,6 +126,14 @@
 .bottom-line {
     height: 2px;
     width: 3rem;
+    background: $main-color;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.hr-line {
+    height: 2px;
+    max-width: 50rem;
     background: $main-color;
     display: block;
     margin: 0 auto 1rem auto;

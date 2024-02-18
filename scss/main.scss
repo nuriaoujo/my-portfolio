@@ -211,48 +211,48 @@ img {
 // About sections
 #about {
     &-a {
-        .about-info {
-            display: grid;
-            grid-template-areas:
-                'bioimage bio bio'
-                'aw1 aw2 aw3';
-            grid-gap: 1.2rem;
-        }
+        .about {
+            &-info {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-gap: 1.2rem;
+                margin-bottom: 1.5rem;
 
-        // Grid Area
-        .bio-image {
-            margin: auto;
-            width: 220px;
-            border-radius: 50%;
-            grid-area: bioimage;
-        }
+                // Grid Area
+                .bio-image {
+                    margin: auto;
+                    width: 220px;
+                    border-radius: 50%;
+                }
+        
+                .bio {
+                    border-radius: 9px;
+                    padding: 0.8rem;
+                    text-align: left;
+                    padding: 30px;
+                }
 
-        .bio {
-            grid-area: bio;
-            border-left: 3px solid $main-color;
-            padding: 0.8rem;
-            text-align: left;
-            padding: 30px;
-        }
+                a:hover {
+                    filter: brightness(1.5);
+                }
+            }
 
-        .award-1 {
-            grid-area: aw1;
-        }
+            &-btn {
+                .btn-1,
+                .btn-2 {
+                    width: 120px;
+                    margin: 0 0.7rem;
+                }
 
-        .award-2 {
-            grid-area: aw2;
+                .btn-2:hover {
+                    color: $main-color;
+                }
+            }
         }
+        
+        
 
-        .award-3 {
-            grid-area: aw3;
-        }
-
-        .award-1 .fas,
-        .award-2 .fas,
-        .award-3 .fas {
-            color: $main-color;
-            margin: 1rem;
-        }
+       
     }
 
     // About B
@@ -260,7 +260,7 @@ img {
     &-b {
         .technologies {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: 2fr 2fr 1fr;
 
             &-column {
                 margin: 30px;
@@ -288,12 +288,21 @@ img {
                 text-align: center;
                 background-color: $main-color;
             }
+
+            .blue { background-color: $contrast-color; }
+
         }
     }
 
     // About C
     &-c {
-        .education {
+
+        .lead {
+            text-align: center;
+        }
+        
+        .education,
+        #pg1 {
             display: grid;
             grid-template-columns: repeat(4,1fr);
             grid-gap: 0.5rem;
@@ -317,16 +326,78 @@ img {
                 height: 50px;
                 border-radius: 50%;
                 margin-right: 0.5rem;
+                object-fit: cover;
+            }
+
+            li {
+                font-size: 0.9rem;
+            }
+
+        }
+        #pg2 {
+            display: none;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 0.5rem;
+
+            ul {
+                list-style: none;
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+            }
+
+            p {
+                border: 1px solid $medium-color;
+                border-radius: 5px;
+                padding: 0.5rem;
+                min-height: 80px;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 0.5rem;
+                object-fit: cover;
             }
 
             li {
                 font-size: 0.9rem;
             }
         }
+
+        .courses {
+            .pagination {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin: auto;
+                max-width: 900px;
+                height: 3rem;
+                color: $main-color;
+
+                .fa-solid {
+                    border: 2px solid $main-color;
+                    padding: 0.5rem 0.8rem;
+                    border-radius: 50%;
+
+                    transition: all 0.7s ease;
+
+                    &:hover {
+                        filter: brightness(0.8);
+                    }
+                }
+            }
+        }
     }
 
     // About D
     &-d {
+        .lead {
+            text-align: center;
+        }
+
         .about-courses {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -365,8 +436,12 @@ img {
     margin: 0.5rem 1rem;
     align-items: center;
     }
+
+    a {
+        color: $light-color;
+    }
     
-    & span:hover {
+    & a:hover {
         color: $contrast-color;
         cursor: pointer;
     }
