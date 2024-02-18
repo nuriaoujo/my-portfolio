@@ -459,6 +459,42 @@ img {
   #about-d .about-courses img {
     width: 70%; }
 
+#contact-a .text-fields {
+  display: grid;
+  grid-template-areas: 'name email' 'subject subject' 'message message';
+  grid-gap: 1.2rem;
+  max-width: 1000px;
+  margin: auto auto 1.2rem auto; }
+  #contact-a .text-fields .name-input {
+    grid-area: name; }
+  #contact-a .text-fields .subject-input {
+    grid-area: subject; }
+  #contact-a .text-fields .email-input {
+    grid-area: email; }
+  #contact-a .text-fields .message-input {
+    grid-area: message;
+    height: 100px; }
+  #contact-a .text-fields .text-input {
+    padding: 0.5rem 1rem;
+    border: 2px solid #DAB88B;
+    border-radius: 9px;
+    background-color: #F3E9DD;
+    color: #0F2C59;
+    font-family: 'Karla', sans-serif; }
+  #contact-a .text-fields .text-input:focus {
+    border: 1px solid #0F2C59;
+    background-color: #FDF6EC; }
+
+#contact-a button[type='submit'] {
+  width: 25%; }
+
+#contact-b {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.5) 90%), url("../img/background.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 90%;
+  background-size: cover;
+  height: 7rem; }
+
 #main-footer {
   background: #0F2C59;
   color: #FDF6EC;
