@@ -274,60 +274,12 @@ img {
   color: #DAB88B;
   padding: 0 4rem; }
 
-#home-b .stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); }
-  #home-b .stats li {
-    line-height: 2; }
-    #home-b .stats li.stats-title {
-      font-size: 1.5rem; }
-    #home-b .stats li.stats-number {
-      font-size: 2rem;
-      font-weight: bold; }
-  #home-b .stats div {
-    padding: 3rem 0; }
-    #home-b .stats div:nth-child(odd) {
-      background-color: #F3E9DD; }
-    #home-b .stats div:nth-child(even) {
-      background-color: #B7CADB; }
-
-#home-c .process {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
-  text-align: center; }
-  #home-c .process-step {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 28px;
-    background: #DAB88B;
-    color: #0F2C59;
-    border-radius: 50%;
-    height: 15px;
-    width: 15px;
-    line-height: 15px;
-    padding: 1rem;
-    transition: all 1s; }
-  #home-c .process-icon {
-    border-radius: 50%;
-    background: #0F2C59;
-    color: #FDF6EC;
-    padding: 2rem;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    text-align: center;
-    position: relative;
-    transition: all 1s; }
-    #home-c .process-icon:hover {
-      background: #DAB88B;
-      width: 90px;
-      height: 90px;
-      line-height: 90px; }
-      #home-c .process-icon:hover .process-step {
-        background: #0F2C59;
-        color: #FDF6EC; }
+#home-b {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 90%), url("../img/background.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 20%;
+  background-size: cover;
+  height: 7rem; }
 
 #about-a .about-info {
   display: grid;
@@ -587,8 +539,12 @@ img {
     #home-a .specials div:last-child {
       border: none;
       padding-bottom: 0; }
-  #home-b .stats div {
-    padding: 2rem 0 1rem 0; }
+  #home-b {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.45) 90%), url("../img/background.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 90%;
+    background-size: cover;
+    height: 7rem; }
   #about-a .about-info {
     display: flex;
     flex-direction: column; }
