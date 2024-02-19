@@ -222,8 +222,9 @@ img {
   text-transform: uppercase; }
   #main-logo {
     display: flex;
-    padding: 1rem 1.5rem;
-    color: #FDF6EC; }
+    padding: 1rem 1.5rem; }
+    #main-logo a {
+      color: #FDF6EC; }
   #main-nav {
     display: flex;
     justify-content: flex-end; }
@@ -409,6 +410,9 @@ img {
   #about-c #pg1 li {
     font-size: 0.9rem; }
 
+#about-c .education p {
+  border: 1px solid #DAB88B; }
+
 #about-c #pg2 {
   display: none;
   grid-template-columns: repeat(4, 1fr);
@@ -452,12 +456,21 @@ img {
 #about-d .lead {
   text-align: center; }
 
-#about-d .about-courses {
+#about-d .experience {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem; }
-  #about-d .about-courses img {
-    width: 70%; }
+  #about-d .experience-item {
+    text-align: center; }
+    #about-d .experience-item p strong {
+      text-transform: uppercase; }
+    #about-d .experience-item img {
+      width: 35%;
+      border-radius: 50%;
+      margin: 1rem;
+      transition: all 0.4s ease; }
+      #about-d .experience-item img:hover {
+        transform: scale(1.1); }
 
 #contact-a .text-fields {
   display: grid;
@@ -578,8 +591,6 @@ img {
       #about-b .technologies-column:last-child {
         padding-bottom: 0;
         border-bottom: none; }
-  #about-c.py-3 {
-    padding: 0; }
   #about-c .education,
   #about-c #pg1 {
     grid-template-columns: 1fr; }
@@ -594,6 +605,14 @@ img {
         display: none; }
       #about-c #pg2 div:last-child {
         display: none; }
+  #about-d .experience {
+    grid-template-columns: 1fr; }
+    #about-d .experience-item {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #F3E9DD; }
+      #about-d .experience-item:last-child {
+        padding-bottom: 0;
+        border-bottom: none; }
   .items {
     grid-template-columns: 1fr; }
   #contact-a .text-fields {

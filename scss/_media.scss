@@ -110,8 +110,6 @@
             }
         }
 
-        &-c.py-3 { padding: 0; }
-
         &-c {
             .education,
             #pg1{
@@ -127,6 +125,22 @@
                     &:last-child { display: none; }
                 }
                 
+            }
+        }
+
+        &-d {
+            .experience {
+                grid-template-columns: 1fr;
+
+                &-item {
+                    padding-bottom: 2rem;
+                    border-bottom: 1px solid $medium-color;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                        border-bottom: none;
+                    }
+                }
             }
         }
     }
