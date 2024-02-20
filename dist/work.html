@@ -40,7 +40,7 @@
             </p>
             <div class="items">
                 <!-- Item: YACOMER -->
-                <div class="item">
+                <div class="item" onclick="openDialog(0)">
                     <div class="item-image">
                         <img src="img/items/mobile/yacomer-prueba.png" alt="YaComer">
                     </div>
@@ -50,6 +50,16 @@
                             <h2 class="item-text-title">YaComer</h2>
                         </div>
                     </div>
+
+                    <dialog class="item-dialog">
+                        <p>Funciona</p>
+                        <form method="dialog">
+                            <button>
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </form>
+                    </dialog>
+
                 </div>
 
                 <!-- Item: WHEGYM -->
@@ -159,7 +169,6 @@
             
         </div>
     </section>
-
     
     <!-- Footer -->
     <footer id="main-footer">
@@ -175,5 +184,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/work.js"></script>
 </body>
 </html>

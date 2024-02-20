@@ -96,4 +96,32 @@
         opacity: 0.7;
         margin: 0;
     }
+
+    &-dialog[open] {
+        width: 70vw;
+        height: 70vh;
+        margin: auto;
+        padding: 2rem;
+        border: 0;
+        border-radius: 12px;
+        background-color: $light-color;
+        color: $dark-color;
+        outline: none;
+
+        .fa-solid {
+            position: relative;
+            float: right;
+            color: $dark-color;
+            font-size: 1.3rem;
+            padding: 0.5rem 0.7rem;
+            border: 1px solid $dark-color;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        &::backdrop {
+            background-color: black;
+            opacity: 0.3;
+        }
+    }
 }
