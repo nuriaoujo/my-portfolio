@@ -56,6 +56,15 @@
   font-size: 1.3rem;
   margin-bottom: 2rem; }
 
+.tech-li {
+  background-color: #91a6b9;
+  border-radius: 12px;
+  color: #FDF6EC;
+  cursor: default;
+  display: inline;
+  margin-right: 0.3rem;
+  padding: 0.5rem 1rem; }
+
 .text-center {
   text-align: center; }
 
@@ -192,7 +201,7 @@
     border-radius: 12px;
     border: 0;
     color: #0F2C59;
-    height: 70vh;
+    height: 75vh;
     margin: auto;
     outline: none;
     padding: 2rem;
@@ -221,9 +230,26 @@
         cursor: pointer; }
     .item-dialog[open] .dialog-body {
       display: flex;
-      flex-direction: row;
-      align-items: center;
+      flex-direction: row-reverse;
+      align-items: normal;
       margin: auto; }
+      .item-dialog[open] .dialog-body .txt-container {
+        text-align: left;
+        padding: 50px 70px 70px 0; }
+        .item-dialog[open] .dialog-body .txt-container div {
+          margin: 4rem 0; }
+          .item-dialog[open] .dialog-body .txt-container div .btn-dark:first-child {
+            margin-right: 1rem; }
+          .item-dialog[open] .dialog-body .txt-container div i {
+            margin-right: 0.5rem; }
+      .item-dialog[open] .dialog-body .images-list-web {
+        padding-top: 100px; }
+        .item-dialog[open] .dialog-body .images-list-web img {
+          width: 600px; }
+      .item-dialog[open] .dialog-body #img-selector .images-list-web {
+        padding-top: 0px; }
+        .item-dialog[open] .dialog-body #img-selector .images-list-web img {
+          width: 600px; }
       .item-dialog[open] .dialog-body #img-selector img {
         width: 400px;
         height: 500px;
