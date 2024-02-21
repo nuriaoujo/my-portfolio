@@ -1,3 +1,52 @@
+// Big Screen
+@media(min-width: 2000px) {
+    #work-a .item-dialog {
+        width: 55vw;
+        height: 55vh;
+    };
+}
+
+// Dialog extra
+@media (min-width: 1025px) and (max-width: 1700px) {
+    #work-a .item-dialog {
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+
+        .dialog-body {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+
+            .txt-container {
+                padding: 2rem;
+                
+                div {
+                    text-align: center;
+                    
+                    .btn-dark:first-child {
+                        margin-right: 0;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            .images-list-web { padding-top: 0; };
+
+            #img-selector .images-list-web img {
+                margin: auto;
+                width: 80%; 
+                height: 300px;
+            }
+
+            #img-selector .images-list img {
+                margin: auto;
+                width: 80%; 
+            }
+        }
+    }
+}
+
 // Tablets & Smaller
 @media(max-width: 800px) {
     #header-home {
@@ -15,12 +64,76 @@
     #about-c .education p { min-height: 160px; }
     #about-c #pg1 p,
     #about-c #pg2 p { min-height: 150px; }
+
+    #work-a .item-dialog {
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+
+        .dialog-body {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+
+            .txt-container {
+                padding: 2rem;
+                
+                div {
+                    text-align: center;
+                    
+                    .btn-dark:first-child {
+                        margin-right: 0;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            .images-list-web { padding-top: 0; };
+
+            #img-selector .images-list-web img {
+                margin: auto;
+                width: 80%; 
+                height: 300px;
+            }
+
+            #img-selector .images-list img {
+                margin: auto;
+                width: 80%; 
+            }
+        }
+    }
 }
 
 @media(max-width: 1025px) and (min-width: 800px) {
     #about-c .education p { min-height: 130px; }
     #about-c #pg1 p,
     #about-c #pg2 p { min-height: 100px; }
+
+    #work-a .item-dialog {
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+
+        .dialog-body {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+
+            .txt-container {
+                padding: 2rem;
+            }
+
+            #img-selector .images-list-web img {
+                margin: auto;
+                width: 80%; 
+            }
+
+            #img-selector .images-list img {
+                margin: auto;
+                width: 80%; 
+            }
+        }
+    }
 }
 
 // Smartphones
@@ -162,6 +275,62 @@
     }
 
     // Work
+    #work-a .item-dialog {
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+        padding: 1.3rem;
+
+        .dialog-body {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+
+            .txt-container {
+                padding: 1rem;
+
+                .lead {
+                    font-size: 1.2rem;
+                }
+
+                div {
+                    text-align: center;
+                }
+
+                div .btn-dark:first-child {
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                }
+
+                ul .tech-li {
+                    display: inline-block;
+                    margin-bottom: 0.4rem;
+                }
+            }
+
+            .images-list-web {
+                padding-top: 0;
+                img {
+                    margin: auto;
+                    width: 100%;
+                    height: 200px; 
+                }
+            }
+
+            #img-selector .images-list-web img {
+                margin: auto;
+                width: 100%;
+                height: 200px; 
+            }
+            
+            #img-selector .images-list img {
+                margin: auto;
+                width: 100%; 
+                height: 400px; 
+            }
+        }
+    }
+
     .items {
         grid-template-columns: 1fr;
     }
