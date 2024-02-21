@@ -188,24 +188,59 @@
     opacity: 0.7;
     margin: 0; }
   .item-dialog[open] {
-    width: 70vw;
+    background-color: #FDF6EC;
+    border-radius: 12px;
+    border: 0;
+    color: #0F2C59;
     height: 70vh;
     margin: auto;
+    outline: none;
     padding: 2rem;
-    border: 0;
-    border-radius: 12px;
-    background-color: #FDF6EC;
-    color: #0F2C59;
-    outline: none; }
-    .item-dialog[open] .fa-solid {
-      position: relative;
-      float: right;
-      color: #0F2C59;
-      font-size: 1.3rem;
-      padding: 0.5rem 0.7rem;
-      border: 1px solid #0F2C59;
-      border-radius: 50%;
-      cursor: pointer; }
+    width: 70vw;
+    overflow: hidden; }
+    .item-dialog[open] .dialog-header {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between; }
+      .item-dialog[open] .dialog-header .dialog-title {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 100%; }
+      .item-dialog[open] .dialog-header button {
+        background-color: #FDF6EC;
+        padding: 0 1.2rem;
+        border: none; }
+        .item-dialog[open] .dialog-header button:focus {
+          outline: none; }
+      .item-dialog[open] .dialog-header .fa-solid {
+        color: #DAB88B;
+        font-size: 1.8rem;
+        border-radius: 50%;
+        cursor: pointer; }
+    .item-dialog[open] .dialog-body {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: auto; }
+      .item-dialog[open] .dialog-body #img-selector img {
+        width: 400px;
+        height: 500px;
+        object-fit: contain;
+        display: none; }
+        .item-dialog[open] .dialog-body #img-selector img:first-child {
+          display: block; }
+      .item-dialog[open] .dialog-body #img-selector .arrow {
+        color: #DAB88B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.7rem; }
+        .item-dialog[open] .dialog-body #img-selector .arrow i {
+          padding: 0 2rem; }
+        .item-dialog[open] .dialog-body #img-selector .arrow .text-container {
+          width: 20%; }
     .item-dialog[open]::backdrop {
       background-color: black;
       opacity: 0.3; }

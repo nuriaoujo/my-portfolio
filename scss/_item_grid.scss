@@ -98,26 +98,76 @@
     }
 
     &-dialog[open] {
-        width: 70vw;
+        background-color: $light-color;
+        border-radius: 12px;
+        border: 0;
+        color: $dark-color;
         height: 70vh;
         margin: auto;
-        padding: 2rem;
-        border: 0;
-        border-radius: 12px;
-        background-color: $light-color;
-        color: $dark-color;
         outline: none;
+        padding: 2rem;
+        width: 70vw;
+        overflow: hidden;
 
-        .fa-solid {
-            position: relative;
-            float: right;
-            color: $dark-color;
-            font-size: 1.3rem;
-            padding: 0.5rem 0.7rem;
-            border: 1px solid $dark-color;
-            border-radius: 50%;
-            cursor: pointer;
+        .dialog-header {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
+
+            .dialog-title {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                width: 100%;
+            }
+            
+            button {
+                background-color: $light-color;
+                padding: 0 1.2rem;
+                border: none;
+                
+                &:focus { outline: none; }
+            }
+            
+            .fa-solid {
+                color: $main-color;
+                font-size: 1.8rem;
+                border-radius: 50%;
+                cursor: pointer;
+            }
         }
+
+        .dialog-body {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: auto;
+            #img-selector {
+                img {
+                    width: 400px;
+                    height: 500px;
+                    object-fit: contain;
+                    display: none;
+
+                    &:first-child {
+                        display: block;
+                    }
+                }
+
+                .arrow {
+                    color: $main-color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 0.7rem;
+
+                    i { padding: 0 2rem; }
+                    .text-container { width: 20%;}
+                }
+            }
+        }
+
 
         &::backdrop {
             background-color: black;
