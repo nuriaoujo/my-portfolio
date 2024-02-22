@@ -406,6 +406,22 @@ img {
             button[type='submit'] {
                 width: 25%;
             }
+
+            .section-contact {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin-bottom: 3rem;
+                cursor: pointer;
+
+                div {
+                    padding: 6rem 0;
+                    i {
+                        transition: all 0.4s;
+                        &:hover { transform: scale(1.2); }
+                    }
+                    
+                }
+            }
         }
 
         &-b {

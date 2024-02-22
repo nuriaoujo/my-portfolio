@@ -540,6 +540,18 @@ img {
 #contact-a button[type='submit'] {
   width: 25%; }
 
+#contact-a .section-contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 3rem;
+  cursor: pointer; }
+  #contact-a .section-contact div {
+    padding: 6rem 0; }
+    #contact-a .section-contact div i {
+      transition: all 0.4s; }
+      #contact-a .section-contact div i:hover {
+        transform: scale(1.2); }
+
 #contact-b {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.5) 90%), url("../img/background.svg");
   background-repeat: no-repeat;
