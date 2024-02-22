@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d6dfd0972.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Karla" rel="stylesheet">
+    <title>Nuria Oujo</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header-inner">
+        <div class="container">
+            <div id="main">
+                <div id="main-logo">
+                    <a href="index.html">Nuria Oujo</a>
+                </div>
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Perfil</a></li>
+                        <li><a href="work.html" class="current">Proyectos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section A: Gallery -->
+    <section id="work-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">
+                Estos son los proyectos más recientes que he realizado...
+            </p>
+            <div class="items">
+                <!-- Item: YACOMER -->
+                <div class="item" onclick="openDialog(0)">
+                    <div class="item-image">
+                        <img src="img/items/mobile/yacomer-prueba.png" alt="YaComer">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">UX/UI</p>
+                            <h2 class="item-text-title">YaComer</h2>
+                        </div>
+                    </div>
+
+                    <dialog class="item-dialog" onclose="closeDialog(event)">
+
+                        <div class="dialog-header">
+                            <div class="dialog-title">
+                                <h2 class="py-1">YaComer</h2>
+                                <div class="bottom-line"></div>
+                            </div>
+
+                            <form method="dialog">
+                                <button>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="dialog-body">
+                            <div class="txt-container">
+                                <p class="lead">
+                                    <strong>Yacomer!</strong> es una nueva aplicación para realizar pedidos para restaurantes en España.
+                                    <br>
+                                    Ofrece una gran variedad de propuestas de menú, explicaciones de los platos y posibilidad de escoger ingredientes con la finalidad de que sea más accesible para todo el mundo.
+                                    También aporta información extra sobre la duración del reparto y la ubicación del rider para no estar atento del tiempo de espera.
+                                </p>
+                                <h3 class="py-1">Herramientas:</h3>
+                                <ul>
+                                    <li class="tech-li">Figma</li>
+                                </ul>
+
+                                <div>
+                                    <a class="btn-dark" href="https://www.figma.com/proto/GWX9KcbgbrEOuvpRn5Pz6N/AppYAcomer?node-id=161-3&starting-point-node-id=161%3A3&t=G34xWuBDqXuqS23v-1" target="_blank">
+                                        <i class="fa-solid fa-link"></i>
+                                        Visualiza mi proyecto en Figma
+                                    </a>
+                                    <a class="btn-dark" href="info/Portfolio_appComidaDomicilio.pdf" target="_blank">
+                                        <i class="fa-solid fa-download"> </i>
+                                        Descarga mi proyecto
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="img-selector">
+                                <div class="images-list">
+                                    <img class="image-list" src="img/items/mobile/yacomer/img1.png" alt="Yacomer img1">
+                                    <img class="image-list" src="img/items/mobile/yacomer/img2.png" alt="Yacomer img2">
+                                    <img class="image-list" src="img/items/mobile/yacomer/img3.png" alt="Yacomer img3">
+                                </div>
+                            
+                                <div class="arrow">
+                                    <i class="fas fa-chevron-left" onclick="previous(event)"></i>
+                                    <p class="text-container">1 ... 3</p>
+                                    <i class="fas fa-chevron-right" onclick="next(event)"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <!-- Item: WHEGYM -->
+                <div class="item" onclick="openDialog(1)">
+                    <div class="item-image">
+                        <img src="img/items/project-1.png" alt="WheGym">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">Desarrollo Web</p>
+                            <h2 class="item-text-title">WheGym</h2>
+                        </div>
+                    </div>
+
+                    <dialog class="item-dialog" onclose="closeDialog(event)">
+
+                        <div class="dialog-header">
+                            <div class="dialog-title">
+                                <h2 class="py-1">WheGym</h2>
+                                <div class="bottom-line"></div>
+                            </div>
+
+                            <form method="dialog">
+                                <button>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="dialog-body">
+                            <div class="txt-container">
+                                <p class="lead">
+                                    <strong>WheGym</strong> es una plataforma que pone en contacto a usuarios de gimnasios con los propios gimnasios, de forma similar a los marketplace.
+                                    <br>
+                                    Sin importar donde resida, un usuario suscrito puede acudir a cualquier gimnasio que se encuentre en la plataforma. 
+                                    <br>
+                                    Las suscripciones se ajustan al tipo de perfil registrado, teniendo una única cuota para los gimnasios y 3 opciones distintas para el usuario de gimnasio.
+                                    <br>
+                                    Este proyecto ha sido realizado junto a Emma Iglesias y Marta Dieguez.
+                                </p>
+                                <h3 class="py-1">Herramientas:</h3>
+                                <ul>
+                                    <li class="tech-li">Ontimize</li>
+                                    <li class="tech-li">Angular</li>
+                                    <li class="tech-li">Spring</li>
+                                    <li class="tech-li">PostgreSQL</li>
+                                </ul>
+
+                                <div>
+                                    <a class="btn-dark" href="https://github.com/CampusDual/demos/tree/main/public/2023-BFS-3-G3_WheGym" target="_blank">
+                                        <i class="fa-solid fa-link"> </i>
+                                        Visualiza mi proyecto en GitHub
+                                    </a>
+                                    <a class="btn-dark" href="info/whegym_presentacion.pdf" target="_blank">
+                                        <i class="fa-solid fa-download"></i>
+                                        Descarga mi proyecto
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="img-selector">
+                                <div class="images-list-web">
+                                    <img class="image-list" src="img/items/web/whegym/img1.png" alt="Yacomer img1">
+                                    <img class="image-list" src="img/items/web/whegym/img2.png" alt="Yacomer img2">
+                                    <img class="image-list" src="img/items/web/whegym/img3.png" alt="Yacomer img3">
+                                </div>
+                            
+                                <div class="arrow">
+                                    <i class="fas fa-chevron-left" onclick="previous(event)"></i>
+                                    <p class="text-container">1 ... 3</p>
+                                    <i class="fas fa-chevron-right" onclick="next(event)"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <!-- Item: EDGELEDGER -->
+                <div class="item" onclick="openDialog(2)">
+                    <div class="item-image">
+                        <img src="img/items/project-4.png" alt="EdgeLedger">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">Desarrollo Web</p>
+                            <h2 class="item-text-title">EdgeLedger</h2>
+                        </div>
+                    </div>
+
+                    <dialog class="item-dialog" onclose="closeDialog(event)">
+
+                        <div class="dialog-header">
+                            <div class="dialog-title">
+                                <h2 class="py-1">EdgeLedger</h2>
+                                <div class="bottom-line"></div>
+                            </div>
+
+                            <form method="dialog">
+                                <button>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="dialog-body">
+                            <div class="txt-container">
+                                <p class="lead">
+                                    <strong>EdgeLedger</strong> es una página web que simula a una empresa dedicada a ofrecer servicios de asistencia financiera de la más alta calidad.
+                                    <br>
+                                    Toda la navegación presentada en el menú superior está orientada a realizarse en una única página con el fin de obtener toda la información con más sencillez.
+                                    <br>
+                                    Para ello, se ha utilizado únicamente HTML5 y CSS3 con unos pequeños añadidos en JavaScript con el fin de ofrecer una mejor navegación.
+                                </p>
+                                <h3 class="py-1">Herramientas:</h3>
+                                <ul>
+                                    <li class="tech-li">HTML5</li>
+                                    <li class="tech-li">CSS3</li>
+                                    <li class="tech-li">JavaScript</li>
+                                </ul>
+
+                                <div>
+                                    <a class="btn-dark" href="https://nuriaoujo.github.io/EdgeLedger-project/" target="_blank">
+                                        <i class="fa-solid fa-link"> </i>
+                                        Visualiza mi proyecto en GitHub Pages
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="img-selector">
+                                <div class="images-list-web">
+                                    <img class="image-list" src="img/items/web/edgeledger/img1.png" alt="Yacomer img1">
+                                    <img class="image-list" src="img/items/web/edgeledger/img2.png" alt="Yacomer img2">
+                                    <img class="image-list" src="img/items/web/edgeledger/img3.png" alt="Yacomer img3">
+                                </div>
+                            
+                                <div class="arrow">
+                                    <i class="fas fa-chevron-left" onclick="previous(event)"></i>
+                                    <p class="text-container">1 ... 3</p>
+                                    <i class="fas fa-chevron-right" onclick="next(event)"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <!-- Item: IDERS -->
+                <div class="item" onclick="openDialog(3)">
+                    <div class="item-image">
+                        <img src="img/items/mobile/iders-prueba.png" alt="iDERS">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">UX/UI</p>
+                            <h2 class="item-text-title">iDERS</h2>
+                        </div>
+                    </div>
+
+                    <dialog class="item-dialog" onclose="closeDialog(event)">
+
+                        <div class="dialog-header">
+                            <div class="dialog-title">
+                                <h2 class="py-1">iDERS</h2>
+                                <div class="bottom-line"></div>
+                            </div>
+
+                            <form method="dialog">
+                                <button>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="dialog-body">
+                            <div class="txt-container">
+                                <p class="lead">
+                                    <strong>iDERS</strong> es una tienda online de bicicletas que ofrece diferentes opciones de compra de dichos artículos.
+                                    <br>
+                                    El usuario típico se encuentra en torno a los 18-35 años de edad, donde buscan información extra y espacios de debate para dentro de la web para conocer mejor los productos.
+                                    <br>
+                                    iDERS busca crear un espacio para los profesionales y los no tan profesionales para encontrar su bicicleta ideal.
+                                </p>
+                                <h3 class="py-1">Herramientas:</h3>
+                                <ul>
+                                    <li class="tech-li">Figma</li>
+                                    <li class="tech-li">Adobe XD</li>
+                                </ul>
+
+                                <div>
+                                    <a class="btn-dark" href="https://www.figma.com/proto/BGl6cvqHiPpTGjFnBwH8OP/AppiDERS?type=design&node-id=5-1036&t=pi3auO3CLpI5ojWi-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=5%3A1036&show-proto-sidebar=1" target="_blank">
+                                        <i class="fa-solid fa-link"></i>
+                                        Visualiza mi proyecto en Figma
+                                    </a>
+                                    <a class="btn-dark" href="info/Portfolio_appBicis.pdf" target="_blank">
+                                        <i class="fa-solid fa-download"> </i>
+                                        Descarga mi proyecto
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="img-selector">
+                                <div class="images-list">
+                                    <img class="image-list" src="img/items/mobile/iders/img1.png" alt="iDers img1">
+                                    <img class="image-list" src="img/items/mobile/iders/img2.png" alt="iDers img2">
+                                    <img class="image-list" src="img/items/mobile/iders/img3.png" alt="iDers img3">
+                                </div>
+                            
+                                <div class="arrow">
+                                    <i class="fas fa-chevron-left" onclick="previous(event)"></i>
+                                    <p class="text-container">1 ... 3</p>
+                                    <i class="fas fa-chevron-right" onclick="next(event)"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </dialog>
+                    
+                </div>
+
+                <!-- Item: PRODUCTSAPP -->
+                <div class="item" onclick="openDialog(4)">
+                    <div class="item-image">
+                        <img src="img/items/project-2.png" alt="ProductsApp">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">Desarrollo Web</p>
+                            <h2 class="item-text-title">ProductsApp</h2>
+                        </div>
+                    </div>
+
+                    <dialog class="item-dialog" onclose="closeDialog(event)">
+
+                        <div class="dialog-header">
+                            <div class="dialog-title">
+                                <h2 class="py-1">ProductsApp</h2>
+                                <div class="bottom-line"></div>
+                            </div>
+
+                            <form method="dialog">
+                                <button>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="dialog-body">
+                            <div class="txt-container">
+                                <p class="lead">
+                                    <strong>ProductsApp</strong> es el primer proyecto Full Stack que he realizado dentro del Bootcamp en Introducción a la Programación.
+                                    <br>
+                                    Esta aplicación web está diseñada para la gestión eficiente de productos en una tienda en línea, ofreciendo una plataforma para visualizar, añadir, modificar y eliminar elementos de manera intuitiva y eficaz.
+                                </p>
+                                <h3 class="py-1">Herramientas:</h3>
+                                <ul>
+                                    <li class="tech-li">Angular</li>
+                                    <li class="tech-li">Spring</li>
+                                    <li class="tech-li">HSQLDB</li>
+                                </ul>
+
+                                <div>
+                                    <a class="btn-dark" href="https://github.com/nuriaoujo/products-app" target="_blank">
+                                        <i class="fa-solid fa-link"></i>
+                                        Visualiza mi proyecto en GitHub
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="img-selector">
+                                <div class="images-list-web">
+                                    <img class="image-list" src="img/items/web/productsapp/img2.png" alt="Yacomer img1">
+                                    <img class="image-list" src="img/items/web/productsapp/img1.png" alt="Yacomer img2">
+                                    <img class="image-list" src="img/items/web/productsapp/img3.png" alt="Yacomer img3">
+                                </div>
+                            
+                                <div class="arrow">
+                                    <i class="fas fa-chevron-left" onclick="previous(event)"></i>
+                                    <p class="text-container">1 ... 3</p>
+                                    <i class="fas fa-chevron-right" onclick="next(event)"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </dialog>
+                </div>
+                
+            <!-- Item: HBT -->
+                <div class="item" onclick="openDialog(5)">
+                    <div class="item-image">
+                        <img src="img/items/project-5.png" alt="HBT">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">Desarrollo Web</p>
+                            <h2 class="item-text-title">HBT Hotel</h2>
+                        </div>
+                    </div>
+
+                    <dialog class="item-dialog" onclose="closeDialog(event)">
+
+                        <div class="dialog-header">
+                            <div class="dialog-title">
+                                <h2 class="py-1">HTB Hotel</h2>
+                                <div class="bottom-line"></div>
+                            </div>
+
+                            <form method="dialog">
+                                <button>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="dialog-body">
+                            <div class="txt-container">
+                                <p class="lead">
+                                    <strong>HBT Hotel</strong> es una página web realizada exclusivamente con HTML5 y CSS3 para presentar a un hotel ficticio.
+                                    <br>
+                                    Esta página ofrece la posibilidad a los visitantes de explorar las características de este hotel, desde una presentación detallada de las instalaciones hasta la posibilidad de consultar las valoraciones de nuestros huéspedes y contactar directamente.
+                                </p>
+                                <h3 class="py-1">Herramientas:</h3>
+                                <ul>
+                                    <li class="tech-li">HTML5</li>
+                                    <li class="tech-li">CSS3</li>
+                                </ul>
+
+                                <div>
+                                    <a class="btn-dark" href="https://nuriaoujo.github.io/HBT-project/" target="_blank">
+                                        <i class="fa-solid fa-link"></i>
+                                        Visualiza mi proyecto en GitHub Pages
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="img-selector">
+                                <div class="images-list-web">
+                                    <img class="image-list" src="img/items/web/hbt/img1.png" alt="Yacomer img1">
+                                    <img class="image-list" src="img/items/web/hbt/img2.png" alt="Yacomer img2">
+                                    <img class="image-list" src="img/items/web/hbt/img3.png" alt="Yacomer img3">
+                                </div>
+                            
+                                <div class="arrow">
+                                    <i class="fas fa-chevron-left" onclick="previous(event)"></i>
+                                    <p class="text-container">1 ... 3</p>
+                                    <i class="fas fa-chevron-right" onclick="next(event)"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </dialog>
+                </div>
+
+                <!-- Item: FONTLINE -->
+                <div class="item" onclick="openDialog(6)">
+                    <div class="item-image">
+                        <img src="img/items/mobile/fontline-prueba.png" alt="FontLine">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">UX/UI</p>
+                            <h2 class="item-text-title">FontLine</h2>
+                        </div>
+                    </div>
+
+                    <dialog class="item-dialog" onclose="closeDialog(event)">
+
+                        <div class="dialog-header">
+                            <div class="dialog-title">
+                                <h2 class="py-1">FontLine</h2>
+                                <div class="bottom-line"></div>
+                            </div>
+
+                            <form method="dialog">
+                                <button>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="dialog-body">
+                            <div class="txt-container">
+                                <p class="lead">
+                                    <strong>FontLine</strong> es una aplicación para la búsqueda de fuentes de agua potable que ofrece direcciones,opiniones y valoraciones reales sobre su ubicación y estado.
+                                    <br>
+                                    El usuario típico se encuentra en torno a los 35-75 años de edad, donde buscan información sobre fuentes cercanas para poder beber agua de calidad.
+                                </p>
+                                <h3 class="py-1">Herramientas:</h3>
+                                <ul>
+                                    <li class="tech-li">Figma</li>
+                                </ul>
+
+                                <div>
+                                    <a class="btn-dark" href="https://www.figma.com/proto/kQWXDOe8qjx81aYHHBio2T/AppFuentes?node-id=25-731&starting-point-node-id=25%3A731&t=u4BHlvaM3IhNqIHb-1" target="_blank">
+                                        Visualiza mi proyecto en Figma
+                                    </a>
+                                    <a class="btn-dark" href="info/Portfolio_appFuentesPotables.pdf" target="_blank">
+                                        <i class="fa-solid fa-download"> </i>
+                                        Descarga mi proyecto
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="img-selector">
+                                <div class="images-list">
+                                    <img class="image-list" src="img/items/mobile/fontline/img1.png" alt="FontLine img1">
+                                    <img class="image-list" src="img/items/mobile/fontline/img2.png" alt="FontLine img2">
+                                    <img class="image-list" src="img/items/mobile/fontline/img3.png" alt="FontLine img3">
+                                </div>
+                            
+                                <div class="arrow">
+                                    <i class="fas fa-chevron-left" onclick="previous(event)"></i>
+                                    <p class="text-container">1 ... 3</p>
+                                    <i class="fas fa-chevron-right" onclick="next(event)"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </dialog>
+                </div>
+
+                <!-- Item: GIFS APP -->
+                <div class="item" onclick="openDialog(7)">
+                    <div class="item-image">
+                        <img src="img/items/project-3.png" alt="GifsApp">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">Desarrollo Web</p>
+                            <h2 class="item-text-title">Gifs App</h2>
+                        </div>
+                    </div>
+
+                    <dialog class="item-dialog" onclose="closeDialog(event)">
+                        
+                        <div class="dialog-header">
+                            <div class="dialog-title">
+                                <h2 class="py-1">Gifs App</h2>
+                                <div class="bottom-line"></div>
+                            </div>
+                            
+                            <form method="dialog">
+                                <button>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <div class="dialog-body">
+                            <div class="txt-container">
+                                <p class="lead">
+                                    <strong>Gifs App</strong> es una aplicación web que sirve exclusivamente para la búsqueda y descubrimiento de gifs a través de palabras clave.
+                                    <br>
+                                    Además, Gifs App cuenta con una función de historial de búsqueda, permitiendo a los usuarios guardar sus consultas anteriores. Esta característica garantiza un acceso rápido y conveniente a los gifs relevantes, mejorando así la experiencia del usuario.
+                                </p>
+                                <h3 class="py-1">Herramientas:</h3>
+                                <ul>
+                                    <li class="tech-li">Angular</li>
+                                    <li class="tech-li">Bootstrap</li>
+                                </ul>
+                                
+                                <div>
+                                    <a class="btn-dark" href="https://nuriaoujo.github.io/gifts-app-angularproject/" target="_blank">
+                                        <i class="fa-solid fa-link"></i>
+                                        Visualiza mi proyecto en GitHub Pages
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="images-list-web">
+                                <img class="image-list" src="img/items/web/extras/gifsapp-img.png" alt="Yacomer img1">
+                            </div>
+                        </div>
+                        
+                    </dialog>
+                </div>
+                
+                <!-- Item: NEWSGRID -->
+                <div class="item" onclick="openDialog(8)">
+                    <div class="item-image">
+                        <img src="img/items/project-6.png" alt="NewsGrid">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">Desarrollo Web</p>
+                            <h2 class="item-text-title">NewsGrid</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <dialog class="item-dialog" onclose="closeDialog(event)">
+
+                    <div class="dialog-header">
+                        <div class="dialog-title">
+                            <h2 class="py-1">NewsGrid</h2>
+                            <div class="bottom-line"></div>
+                        </div>
+
+                        <form method="dialog">
+                            <button>
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="dialog-body">
+                        <div class="txt-container">
+                            <p class="lead">
+                                <strong>NewsGrid</strong> es una nueva aplicación web para disfrutar de las últimas noticias y los temas de actualidad. NewsGrid está íntegramente realizado con HTML5 y CSS3.
+                                <br>
+                                Esta página web presenta las noticias y eventos distribuídos en diversas categorías para satisfacer todos los intereses, desde deporte hasta tecnología.
+                            </p>
+                            <h3 class="py-1">Herramientas:</h3>
+                            <ul>
+                                <li class="tech-li">HTML5</li>
+                                <li class="tech-li">CSS3</li>
+                            </ul>
+
+                            <div>
+                                <a class="btn-dark" href="https://nuriaoujo.github.io/news-grid/" target="_blank">
+                                    <i class="fa-solid fa-link"></i>
+                                    Visualiza mi proyecto en GitHub Pages
+                                </a>
+                            </div>
+                        </div>
+                        <div id="img-selector">
+                            <div class="images-list-web">
+                                <img class="image-list" src="img/items/web/newsgrid/img1.png" alt="Yacomer img1">
+                                <img class="image-list" src="img/items/web/newsgrid/img2.png" alt="Yacomer img2">
+                                <img class="image-list" src="img/items/web/newsgrid/img3.png" alt="Yacomer img3">
+                            </div>
+                        
+                            <div class="arrow">
+                                <i class="fas fa-chevron-left" onclick="previous(event)"></i>
+                                <p class="text-container">1 ... 3</p>
+                                <i class="fas fa-chevron-right" onclick="next(event)"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </dialog>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Nuria Oujo</p>
+            <div>
+                <div class="social">
+                    <h3>Conectemos</h3>
+                    <a href="https://www.linkedin.com/in/nuriaoujo/" target="_blank"><i class="icon fab fa-linkedin-in fa-2x"></i> /nuriaoujo</a>
+                    <a href="https://github.com/nuriaoujo" target="_blank"><i class="icon fab fa-github fa-2x"></i> /nuriaoujo</a>
+                    <a href="mailto: oujomiguez.nuria@gmail.com" target="_blank"><i class="icon fas fa-envelope fa-2x"></i> oujomiguez.nuria@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/work.js"></script>
+</body>
+</html>
