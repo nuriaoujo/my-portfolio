@@ -52,6 +52,10 @@
   background-color: #F3E9DD;
   color: #0F2C59; }
 
+.bg-contrast {
+  background-color: #B7CADB;
+  color: #0F2C59; }
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem; }

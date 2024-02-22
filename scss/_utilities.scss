@@ -71,6 +71,10 @@
         background-color: $medium-color;
         color: set-text-color($medium-color);
     }
+    &-contrast {
+        background-color: $contrast-color;
+        color: set-text-color($contrast-color);
+    }
 }
 
 .lead {
