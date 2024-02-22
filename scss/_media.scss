@@ -353,6 +353,11 @@
             p {
                 font-size: 1.2rem;
             }
+
+            .section-contact {
+                grid-template-columns: 1fr;
+                div { padding: 2rem 0 0; }
+            }
         }
     }
 

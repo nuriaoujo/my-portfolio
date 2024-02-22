@@ -796,6 +796,10 @@ img {
     width: 40%; }
   #contact-a p {
     font-size: 1.2rem; }
+  #contact-a .section-contact {
+    grid-template-columns: 1fr; }
+    #contact-a .section-contact div {
+      padding: 2rem 0 0; }
   #main-footer {
     display: flex;
     margin: auto; }
