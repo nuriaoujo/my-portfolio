@@ -84,6 +84,9 @@
 .py-4 {
   padding: 4rem 0; }
 
+.py-4-ex {
+  padding: 4rem 0; }
+
 .my-1 {
   margin: 1rem 0; }
 
@@ -334,7 +337,7 @@ img {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 90%), url("../img/background.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 110%;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -356,10 +359,21 @@ img {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr); }
+  #home-a .specials .fas {
+    color: #DAB88B;
+    padding: 0 4rem; }
 
-#home-a .fas {
-  color: #DAB88B;
-  padding: 0 4rem; }
+#home-a .section-contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 3rem;
+  cursor: pointer; }
+  #home-a .section-contact div {
+    padding: 6rem 0; }
+    #home-a .section-contact div i {
+      transition: all 0.4s; }
+      #home-a .section-contact div i:hover {
+        transform: scale(1.2); }
 
 #home-b {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 90%), url("../img/background.svg");
@@ -703,12 +717,20 @@ img {
   #home-b .stats,
   #home-c .process {
     grid-template-columns: 1fr; }
+  .py-4-ex {
+    padding: 4rem 0 0 0; }
   #home-a .specials div {
     border-bottom: 1px #F3E9DD solid;
     padding-bottom: 1rem; }
     #home-a .specials div:last-child {
       border: none;
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      margin-bottom: 4rem; }
+  #home-a .section-contact {
+    grid-template-columns: 1fr;
+    margin-bottom: 0; }
+    #home-a .section-contact div {
+      padding: 2rem 0 0; }
   #home-b {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.45) 90%), url("../img/background.svg");
     background-repeat: no-repeat;
