@@ -45,18 +45,73 @@
                 ¡Gracias por visitar mi portfolio!
             </p>
 
-            <form class="py-1">
+            <form
+                id="gform"
+                class="py-1"
+                name="gform"
+                enctype="text/plain" 
+                action="https://docs.google.com/forms/d/e/1FAIpQLSfi7H5ixnIwkkWoL0p9iX2azQmyyB8k3hTOy3G1L4wVrzNVcg/formResponse?"
+                target="hidden_iframe" onsubmit="submitted=true;">
+
                 <div class="text-fields">
-                    <input type="text" class="text-input name-input" placeholder="Nombre" name="name">
-                    <input type="text" class="text-input subject-input" name="subject" placeholder="Asunto">
-                    <input type="email" class="text-input email-input" placeholder="Email" name="email">
-                    <textarea class="text-input message-input" placeholder="Introduce tu mensaje..." name="message"></textarea>
+                    <!-- Name field -->
+                    <input
+                        type="text"
+                        class="text-input name-input"
+                        placeholder="Nombre"
+                        name="entry.68204919"
+                        id="entry.68204919"
+                        required
+                    >
+
+                    <!-- Email field -->
+                    <input
+                        type="email"
+                        class="text-input email-input"
+                        placeholder="Email"
+                        name="entry.1538688972"
+                        id="entry.1538688972"
+                        required
+                    >
+
+                    <!-- Subject field -->
+                    <input
+                        type="text"
+                        class="text-input subject-input"
+                        placeholder="Asunto"
+                        name="entry.1195470094"
+                        id="entry.1195470094"
+                        required
+                    >
+
+                    <!-- Message field -->
+                    <textarea
+                        class="text-input message-input"
+                        placeholder="Introduce tu mensaje..."
+                        name="entry.545604182"
+                        id="entry.545604182"
+                        required
+                    ></textarea>
+
                     <div class="my-2">
-                        <div data-netlify-recaptcha="true"></div>
                     </div>
                 </div>
                 <button class="btn-dark" type="submit">Enviar</button>
+
+                <div class="dialog-style" popup="close">
+                    <h4 class="lead text-center">¡Mensaje recibido!</h4>
+                    <div class="bottom-line"></div>
+                    <p>Gracias por ponerte en contacto,
+                        <br>
+                        responderé con la mayor brevedad posible.
+                    </p>
+                </div>
+                
             </form>
+
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+            <script src="js/contact.js"></script>
 
         </div>
     </section>
@@ -77,5 +132,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
