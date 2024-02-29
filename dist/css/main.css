@@ -373,7 +373,7 @@ img {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 90%), url("../img/background.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 110%;
+  background-size: cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -382,13 +382,34 @@ img {
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
+  #header-home li button {
+    color: #FDF6EC;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    transition: color 0.4s ease; }
+    #header-home li button:hover {
+      color: #DAB88B; }
+  #header-home li:last-child {
+    color: #DAB88B; }
 
 #header-inner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.5) 90%), url("../img/background.svg");
   background-repeat: no-repeat;
   background-position: 100% 17.5%;
   background-size: cover;
-  height: 5.5rem; }
+  height: 5.5rem;
+  text-align: center; }
+  #header-inner li button {
+    color: #FDF6EC;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    transition: color 0.4s ease; }
+    #header-inner li button:hover {
+      color: #DAB88B; }
+  #header-inner li:last-child {
+    color: #DAB88B; }
 
 #home-a .specials {
   margin-top: 3rem;
