@@ -1,4 +1,18 @@
 {
+    "index": "Inicio",
+    "about": "Perfil",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "footer_title": "Conectemos",
     "who_i_am": "Soy Nuria Oujo,",
-    "what_i_do": "Especializada en Diseño UX/UI y Desarrollo Full Stack"
+    "what_i_do_1": "Especializada en Diseño UX/UI y Desarrollo Full Stack",
+    "what_i_do_2": "Diseño de Experiencia de Usuario y Desarrollo Full Stack",
+    "view_my_projects": "Ver mis proyectos",
+    "specialized_in": "Estoy especializada en",
+    "index_title_1": "Desarrollo Web",
+    "index_title_2": "Experiencia de Usuario",
+    "index_title_3": "Diseño de Interfaz",
+    "index_text_1": "Me he especializado en Desarrollo Full Stack a través de dos Bootcamps con el respaldo de CampusDual TIC.",
+    "index_text_2": "Me apasiona crear experiencias digitales que sean intuitivas y atractivas para los usuarios. He mejorado mis conocimientos con un curso en Diseño de Experiencia de Usuario (UX).",
+    "index_text_3": "Me gradué en Bellas Artes y complementé mi formación con un curso en Diseño de Experiencia de Usuario (UX) en colaboración con Google."
 }

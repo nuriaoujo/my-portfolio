@@ -1,4 +1,18 @@
 {
+    "index": "Home",
+    "about": "Profile",
+    "projects": "Projects",
+    "contact": "Contact",
+    "footer_title": "Let's Connect",
     "who_i_am": "I am Nuria Oujo,",
-    "what_i_do": "Specialized in UX/UI Design & Full Stack Development"
+    "what_i_do_1": "Specialized in UX/UI Design & Full Stack Development",
+    "what_i_do_2": "User Experience Design & Full Stack Development",
+    "view_my_projects": "View my projects",
+    "specialized_in": "I am specialized in",
+    "index_title_1": "Web Development",
+    "index_title_2": "User Experience",
+    "index_title_3": "Interface Design",
+    "index_text_1": "I am specialized in Full Stack Development through two Bootcamps taught by CampusDual TIC.",
+    "index_text_2": "I like to create digital experiences that are intuitive and engaging for users. I improved my skills with a User Experience Design (UX) course.",
+    "index_text_3": "I graduated in Fine Arts and complemented my training with an User Experience Design (UX) course by Google."
 }
