@@ -21,6 +21,7 @@
     "about_title_3": "Experience",
     "about_title_4": "Studies",
     "about_title_5": "Other Formations",
+    "contact_title_1": "Contact",
     "about_subtitle_1": "Let me tell you more about me...",
     "about_subtitle_1_2": "Do you want to know me better?",
     "about_subtitle_3": "This is my professional experience",
@@ -35,6 +36,7 @@
     "about_me_txt_3_3": "clicking here",
     "download_cv": "Download my CV",
     "contact_btn": "Contact",
+    "submit_btn": "Submit",
     "fullstack_knowledge": "Full Stack Development",
     "design_knowledge": "UX/UI Design",
     "languages_knowledge": "Languages",
@@ -56,5 +58,13 @@
     "course_item_1": "TypeScript: Your complete guide & handbook",
     "course_item_2": "Modern JavaScript: A Guide to mastering the language",
     "course_item_3": "User Experience Design (UX) by Google",
-    "course_item_4": "GIT + GitHub: A whole version control system from scratch"
+    "course_item_4": "GIT + GitHub: A whole version control system from scratch",
+    "contact_text_1": "Currently I am",
+    "contact_text_2": "looking for a job",
+    "contact_text_3": "I am exploring new professional opportunities, that's why I would love to join your team.",
+    "contact_text_4": "If you consider that my profile can contribute to your projects... Do not hesitate to contact me!",
+    "contact_text_5": "Thank you for visiting my portfolio!",
+    "contact_name": "Name:",
+    "contact_subject": "Subject:",
+    "contact_message": "Message:"
 }

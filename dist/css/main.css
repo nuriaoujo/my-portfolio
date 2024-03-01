@@ -589,15 +589,23 @@ img {
   grid-gap: 1.2rem;
   max-width: 1000px;
   margin: auto auto 1.2rem auto; }
-  #contact-a .text-fields .name-input {
+  #contact-a .text-fields div {
+    display: flex;
+    flex-direction: column; }
+    #contact-a .text-fields div label {
+      text-align: justify;
+      padding-left: 1rem;
+      color: #0F2C59; }
+  #contact-a .text-fields div:nth-child(1) {
     grid-area: name; }
-  #contact-a .text-fields .subject-input {
-    grid-area: subject; }
-  #contact-a .text-fields .email-input {
+  #contact-a .text-fields div:nth-child(2) {
     grid-area: email; }
-  #contact-a .text-fields .message-input {
-    grid-area: message;
-    height: 100px; }
+  #contact-a .text-fields div:nth-child(3) {
+    grid-area: subject; }
+  #contact-a .text-fields div:nth-child(4) {
+    grid-area: message; }
+    #contact-a .text-fields div:nth-child(4) textarea {
+      height: 100px; }
   #contact-a .text-fields .text-input {
     padding: 0.5rem 1rem;
     border: 2px solid #DAB88B;
