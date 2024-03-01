@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Karla" rel="stylesheet">
+    <script src="js/update-content.js"></script>
     <title>Nuria Oujo</title>
 </head>
 <body>
@@ -20,14 +21,14 @@
                 </div>
                 <nav id="main-nav">
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="about.html">Perfil</a></li>
-                        <li><a href="work.html" class="current">Proyectos</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="index.html" data-i18n="index">Inicio</a></li>
+                        <li><a href="about.html" data-i18n="about">Perfil</a></li>
+                        <li><a href="work.html" data-i18n="projects" class="current">Proyectos</a></li>
+                        <li><a href="contact.html" data-i18n="contact">Contacto</a></li>
                         <li>
-                            <button onclick="">ES</button>
+                            <button onclick="changeLanguage('es')">ES</button>
                             |
-                            <button onclick="">EN</button>
+                            <button onclick="changeLanguage('en')">EN</button>
                         </li>
                         
                     </ul>
@@ -39,9 +40,9 @@
     <!-- Section A: Gallery -->
     <section id="work-a" class="text-center py-3">
         <div class="container">
-            <h2 class="section-title">Mis Proyectos</h2>
+            <h2 class="section-title" data-i18n="work_title_1">Mis Proyectos</h2>
             <div class="bottom-line"></div>
-            <p class="lead">
+            <p class="lead" data-i18n="work_subtitle_1">
                 Estos son los proyectos más recientes que he realizado...
             </p>
             <div class="items">
@@ -123,7 +124,7 @@
                     </div>
                     <div class="item-text">
                         <div class="item-text-wrap">
-                            <p class="item-text-category">Desarrollo Web</p>
+                            <p class="item-text-category" data-i18n="index_title_1">Desarrollo Web</p>
                             <h2 class="item-text-title">WheGym</h2>
                         </div>
                     </div>
@@ -668,7 +669,7 @@
             <p>Nuria Oujo</p>
             <div>
                 <div class="social">
-                    <h3>Conectemos</h3>
+                    <h3 data-i18n="footer_title">Conectemos</h3>
                     <a href="https://www.linkedin.com/in/nuriaoujo/" target="_blank"><i class="icon fab fa-linkedin-in fa-2x"></i> /nuriaoujo</a>
                     <a href="https://github.com/nuriaoujo" target="_blank"><i class="icon fab fa-github fa-2x"></i> /nuriaoujo</a>
                     <a href="mailto: oujomiguez.nuria@gmail.com" target="_blank"><i class="icon fas fa-envelope fa-2x"></i> oujomiguez.nuria@gmail.com</a>
