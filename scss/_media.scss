@@ -226,6 +226,10 @@
             }
 
             .about-btn {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 .btn-1,
                 .btn-2 {
                     margin: 0.7rem 0.7rem 0;

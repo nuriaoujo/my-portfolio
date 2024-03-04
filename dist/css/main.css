@@ -857,9 +857,14 @@ img {
     flex-direction: column; }
     #about-a .about-info .bio-image {
       width: 150px; }
-  #about-a .about-btn .btn-1,
-  #about-a .about-btn .btn-2 {
-    margin: 0.7rem 0.7rem 0; }
+  #about-a .about-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #about-a .about-btn .btn-1,
+    #about-a .about-btn .btn-2 {
+      margin: 0.7rem 0.7rem 0; }
   #about-b .technologies {
     grid-template-columns: 1fr; }
     #about-b .technologies-column {
