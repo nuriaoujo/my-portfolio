@@ -74,7 +74,22 @@
             </p>
             <div class="about-btn">
                 <a href="contact.html" class="btn-1 btn-dark" data-i18n="contact_btn">Contactemos</a>
-                <a href="info/oujomiguez_nuria_cv.pdf" target="_blank" class="btn-2 btn-main" data-i18n="download_cv_btn">Descarga mi CV</a>
+                <div>
+                    <a target="_blank" class="btn-2 btn-main" onclick="openCVOption()">
+                        <span data-i18n="download_cv_btn">Descarga mi CV </span>
+                        <i id="download-chevron" class="fa-solid fa-chevron-up"></i>
+                    </a>
+                    <div class="options">
+                        <div class="options-eng">
+                            <i class="fa-solid fa-download"></i>
+                            <span data-i18n="languages_knowledge_english">Castellano</span>
+                        </div>
+                        <div class="options-esp">
+                            <i class="fa-solid fa-download"></i>
+                            <span data-i18n="languages_knowledge_spanish">Inglés</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

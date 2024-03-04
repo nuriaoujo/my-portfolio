@@ -14,3 +14,15 @@ function lastPage() {
 
 document.getElementById("lastpage").onclick = function() {lastPage()};
 document.getElementById("nextpage").onclick = function() {nextPage()};
+
+function openCVOption() {
+    const cVBtn = document.getElementsByClassName("options");
+    const cVChervon = document.getElementById("download-chevron");
+    if ( cVBtn[0].style.opacity == "1") {
+        cVBtn[0].style.opacity = "0";
+        cVChervon.style.transform = "rotate(0deg)";
+    } else {
+        cVBtn[0].style.opacity = "1";
+        cVChervon.style.transform = "rotate(180deg)";
+    }
+}

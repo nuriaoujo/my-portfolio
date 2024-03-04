@@ -479,13 +479,35 @@ img {
   #about-a .about-info a:hover {
     filter: brightness(1.5); }
 
-#about-a .about-btn .btn-1,
-#about-a .about-btn .btn-2 {
-  width: 122px;
-  margin: 0 0.7rem; }
-
-#about-a .about-btn .btn-2:hover {
-  color: #DAB88B; }
+#about-a .about-btn {
+  display: flex;
+  justify-content: center; }
+  #about-a .about-btn .btn-1,
+  #about-a .about-btn .btn-2 {
+    width: 145px;
+    margin: 0 0.7rem; }
+  #about-a .about-btn .btn-1 {
+    height: 27px; }
+  #about-a .about-btn .btn-main:hover {
+    background-color: #DAB88B;
+    color: #FDF6EC !important; }
+  #about-a .about-btn > div {
+    display: flex;
+    flex-direction: column; }
+    #about-a .about-btn > div .options {
+      opacity: 0; }
+      #about-a .about-btn > div .options div {
+        padding: 0.8rem 2rem;
+        margin: 0 0.7rem;
+        background-color: #F3E9DD;
+        transition: 0.7s all; }
+        #about-a .about-btn > div .options div:last-child {
+          border-radius: 0 0 9px 9px;
+          border-top: 1px dotted #DAB88B; }
+        #about-a .about-btn > div .options div:hover {
+          background-color: #DAB88B; }
+  #about-a .about-btn .btn-2:hover {
+    color: #DAB88B; }
 
 #about-b .technologies {
   display: grid;
