@@ -20,10 +20,15 @@
                 </div>
                 <nav id="main-nav">
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="about.html">Perfil</a></li>
-                        <li><a href="work.html">Proyectos</a></li>
-                        <li><a href="contact.html" class="current">Contacto</a></li>
+                        <li><a href="index.html" data-i18n="index">Inicio</a></li>
+                        <li><a href="about.html" data-i18n="about">Perfil</a></li>
+                        <li><a href="work.html" data-i18n="projects">Proyectos</a></li>
+                        <li><a href="contact.html" data-i18n="contact" class="current">Contacto</a></li>
+                        <li>
+                            <button onclick="changeLanguage('es')">ES</button>
+                            |
+                            <button onclick="changeLanguage('en')">EN</button>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -33,83 +38,102 @@
     <!-- Section A: Contact form -->
     <section id="contact-a" class="text-center py-4">
         <div>
-            <h2 class="section-title">Contactemos</h2>
+            <h2 class="section-title" data-i18n="contact_title_1">Contactemos</h2>
             <div class="bottom-line"></div>
             <p class="lead">
-                Actualmente estoy <strong>buscando empleo</strong>,
+                <span data-i18n="contact_text_1">Actualmente estoy</span>
+                <strong data-i18n="contact_text_2">buscando empleo</strong>,
                 <br>
-                Estoy explorando nuevas oportunidades profesionales y me encantaría formar parte de vuestro equipo.
+                <span data-i18n="contact_text_3">
+                    Estoy explorando nuevas oportunidades profesionales y me encantaría formar parte de vuestro equipo.
+                </span>
                 <br>
-                Si considerais que mi perfil puede contribuir a vuestros proyectos... ¡No dudéis en contactar conmigo!
+                <span data-i18n="contact_text_4">
+                    Si considerais que mi perfil puede contribuir a vuestros proyectos... ¡No dudéis en contactar conmigo!
+                </span>
                 <br>
-                ¡Gracias por visitar mi portfolio!
+                <span data-i18n="contact_text_5">
+                    ¡Gracias por visitar mi portfolio!
+                </span>
             </p>
 
-            <form
-                id="gform"
-                class="py-1"
-                name="gform"
-                enctype="text/plain" 
-                action="https://docs.google.com/forms/d/e/1FAIpQLSfi7H5ixnIwkkWoL0p9iX2azQmyyB8k3hTOy3G1L4wVrzNVcg/formResponse?"
-                target="hidden_iframe" onsubmit="submitted=true;">
-
-                <div class="text-fields">
-                    <!-- Name field -->
-                    <input
-                        type="text"
-                        class="text-input name-input"
-                        placeholder="Nombre"
-                        name="entry.68204919"
-                        id="entry.68204919"
-                        required
-                    >
-
-                    <!-- Email field -->
-                    <input
-                        type="email"
-                        class="text-input email-input"
-                        placeholder="Email"
-                        name="entry.1538688972"
-                        id="entry.1538688972"
-                        required
-                    >
-
-                    <!-- Subject field -->
-                    <input
-                        type="text"
-                        class="text-input subject-input"
-                        placeholder="Asunto"
-                        name="entry.1195470094"
-                        id="entry.1195470094"
-                        required
-                    >
-
-                    <!-- Message field -->
-                    <textarea
-                        class="text-input message-input"
-                        placeholder="Introduce tu mensaje..."
-                        name="entry.545604182"
-                        id="entry.545604182"
-                        required
-                    ></textarea>
-
-                    <div class="my-2">
+            <div class="container">
+                <form
+                    id="gform"
+                    class="py-1"
+                    name="gform"
+                    enctype="text/plain" 
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSfi7H5ixnIwkkWoL0p9iX2azQmyyB8k3hTOy3G1L4wVrzNVcg/formResponse?"
+                    target="hidden_iframe" onsubmit="submitted=true;">
+    
+                    <div class="text-fields">
+                        <!-- Name field -->
+                        <div>
+                            <label for="entry.68204919" data-i18n="contact_name">Name</label>
+                            <input
+                                type="text"
+                                class="text-input name-input"
+                                name="entry.68204919"
+                                id="entry.68204919"
+                                required
+                            >
+                        </div>
+    
+                        <!-- Email field -->
+                        <div>
+                            <label for="entry.68204919">Email:</label>
+                            <input
+                                type="email"
+                                class="text-input email-input"
+                                name="entry.1538688972"
+                                id="entry.1538688972"
+                                required
+                            >
+                        </div>
+    
+                        <!-- Subject field -->
+                        <div>
+                            <label for="entry.1195470094" data-i18n="contact_subject"></label>
+                            <input
+                                type="text"
+                                class="text-input subject-input"
+                                name="entry.1195470094"
+                                id="entry.1195470094"
+                                required
+                            >
+                        </div>
+    
+                        <!-- Message field -->
+                        <div>
+                            <label for="entry.545604182" data-i18n="contact_message"></label>
+                            <textarea
+                                class="text-input message-input"
+                                name="entry.545604182"
+                                id="entry.545604182"
+                                required
+                            ></textarea>
+                        </div>
+    
+                        <div class="my-2">
+                        </div>
                     </div>
-                </div>
-                <button class="btn-dark" type="submit">Enviar</button>
+                    <button class="btn-dark" type="submit" data-i18n="submit_btn">Enviar</button>
+    
+                    <div class="dialog-style" popup="close">
+                        <h4 class="lead text-center">¡Mensaje recibido!</h4>
+                        <div class="bottom-line"></div>
+                        <p>Gracias por ponerte en contacto,
+                            <br>
+                            responderé con la mayor brevedad posible.
+                        </p>
+                    </div>
+                    
+                </form>
+    
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
-                <div class="dialog-style" popup="close">
-                    <h4 class="lead text-center">¡Mensaje recibido!</h4>
-                    <div class="bottom-line"></div>
-                    <p>Gracias por ponerte en contacto,
-                        <br>
-                        responderé con la mayor brevedad posible.
-                    </p>
-                </div>
-                
-            </form>
+            </div>
 
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
             <script src="js/contact.js"></script>
 
@@ -121,17 +145,31 @@
     <!-- Footer -->
     <footer id="main-footer" class="py-3-btt">
         <div class="footer-content container">
-            <p>Nuria Oujo</p>
+            <p id="footer-date"></p>
             <div>
                 <div class="social">
-                    <h3>Conectemos</h3>
+                    <h3 data-i18n="footer_title">Conectemos</h3>
                     <a href="https://www.linkedin.com/in/nuriaoujo/" target="_blank"><i class="icon fab fa-linkedin-in fa-2x"></i> /nuriaoujo</a>
                     <a href="https://github.com/nuriaoujo" target="_blank"><i class="icon fab fa-github fa-2x"></i> /nuriaoujo</a>
                     <a href="mailto: oujomiguez.nuria@gmail.com" target="_blank"><i class="icon fas fa-envelope fa-2x"></i> oujomiguez.nuria@gmail.com</a>
                 </div>
+
+                <!-- Mobile Language selector -->
+                <div class="lng-mobile-selector">
+                    <div class="line-separator my-1"></div>
+                    <h3 data-i18n="footer_lang_selector">Selecciona tu idioma</h3>
+                    <p style="display: block;">
+                        <span onclick="changeLanguage('es')" data-i18n="languages_knowledge_spanish">Castellano</span>
+                         |  
+                        <span onclick="changeLanguage('en')" data-i18n="languages_knowledge_english">Inglés</span>
+                    </p>
+
+                </div>
             </div>
         </div>
     </footer>
+
+    <script src="js/update-content.js"></script>
 
 </body>
 </html>

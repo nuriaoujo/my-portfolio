@@ -20,10 +20,15 @@
                 </div>
                 <nav id="main-nav">
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="about.html" class="current">Perfil</a></li>
-                        <li><a href="work.html">Proyectos</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="index.html" data-i18n="index">Inicio</a></li>
+                        <li><a href="about.html" data-i18n="about" class="current">Perfil</a></li>
+                        <li><a href="work.html" data-i18n="projects">Proyectos</a></li>
+                        <li><a href="contact.html" data-i18n="contact">Contacto</a></li>
+                        <li>
+                            <button onclick="changeLanguage('es')">ES</button>
+                            |
+                            <button onclick="changeLanguage('en')">EN</button>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -33,38 +38,58 @@
     <!-- Section A: Info -->
     <section id="about-a" class="text-center py-3">
         <div class="container">
-            <h2 class="section-title">Mi Perfil</h2>
+            <h2 class="section-title" data-i18n="about_title_1">Mi Perfil</h2>
             <div class="bottom-line"></div>
-            <p class="lead">
-                Deja que te cuente un poco sobre mi...
-            </p>
+            <p class="lead" data-i18n="about_subtitle_1"></p>
             <div class="about-info">
                 <img src="img/about.webp" alt="" class="bio-image">
                 <div class="bio bg-medium">
-                    <h4>Soy Nuria Oujo, Desarrolladora Junior Full Stack y Diseñadora UX/UI.</h4>
+                    <h4 data-i18n="who_i_am_2">Soy Nuria Oujo, Desarrolladora Junior Full Stack y Diseñadora UX/UI.</h4>
                     <p>
-                        Actualmente colaboro activamente en la gestión de redes del club de orientación
-                        ADC Arnela mientras me formo en Desarrollo Full Stack.
+                        <span data-i18n="about_me_txt_1">
+                            Actualmente colaboro activamente en la gestión de redes del club de orientación
+                            ADC Arnela mientras me formo en Desarrollo Full Stack.
+                        </span>
                         <br>
-                        En estos momentos busco empleo como <strong>Desarrolladora Front End</strong>, pero estoy abierta a explorar otras posibilidades laborales.
+                        <span data-i18n="about_me_txt_2_1">En estos momentos busco empleo como</span>
+                        <strong data-i18n="about_me_txt_2_2">Desarrolladora Front End</strong>
+                        <span data-i18n="about_me_txt_2_3">, pero estoy abierta a explorar otras posibilidades laborales.</span>
                         <br>
-                        Te invito a que nos mantengamos en contacto a través de mi correo 
+                        <span data-i18n="about_me_txt_3_1">
+                            Te invito a que nos mantengamos en contacto a través de mi correo 
+                        </span>
                         <a href="mailto: oujomiguez.nuria@gmail.com" target="_blank">
                             <strong>oujomiguez.nuria@gmail.com</strong>
-                        </a> o 
-                        <a href="contact.html">
-                            <strong>pulsando aquí</strong>.
                         </a>
-                    </p>
+                        <span data-i18n="about_me_txt_3_2"></span> 
+                        <a href="contact.html">
+                            <strong data-i18n="about_me_txt_3_3">pulsando aquí</strong>.
+                        </a>
+                </p>
                 </div>
             </div>
             <div class="bottom-line"></div>
-            <p class="lead">
+            <p class="lead" data-i18n="about_subtitle_1_2">
                 ¿Quieres conocerme mejor?
             </p>
             <div class="about-btn">
-                <a href="contact.html" class="btn-1 btn-dark">Contactemos</a>
-                <a href="info/oujomiguez_nuria_cv.pdf" target="_blank" class="btn-2 btn-main">Descarga mi CV</a>
+                <a href="contact.html" class="btn-1 btn-dark" data-i18n="contact_btn">Contactemos</a>
+                <div>
+                    <a target="_blank" class="btn-2 btn-main" onclick="openCVOption()">
+                        <span data-i18n="download_cv_btn">Descarga mi CV </span>
+                        <i id="download-chevron" class="fa-solid fa-chevron-up"></i>
+                    </a>
+                    <div class="options">
+                        <a class="options-eng" href="info/cv_eng.pdf" target="_blank">
+                            <i class="fa-solid fa-download"></i>
+                            <span data-i18n="languages_knowledge_english">Inglés</span>
+                        </a>
+                        <a class="options-esp" href="info/cv_esp.pdf" target="_blank">
+                            <i class="fa-solid fa-download"></i>
+                            <span data-i18n="languages_knowledge_spanish">Castellano</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -72,13 +97,13 @@
     <!-- Section B: Progress Bars -->
     <section id="about-b" class="bg-dark py-3">
         <div class="container">
-            <h2 class="section-title">Conocimientos</h2>
+            <h2 class="section-title" data-i18n="about_title_2">Conocimientos</h2>
             <div class="bottom-line"></div>
 
             <div class="technologies">
 
                 <div class="technologies-column">
-                    <h3>Desarrollo FullStack</h3>
+                    <h3 data-i18n="fullstack_knowledge">Desarrollo Full Stack</h3>
                     <h4>CSS3 | HTML5</h4>
                     <div class="progress">
                         <div style="width:90%"></div>
@@ -106,7 +131,7 @@
                 </div>
                 
                 <div class="technologies-column">
-                    <h3>Diseño UX/UI</h3>
+                    <h3 data-i18n="design_knowledge">Diseño UX/UI</h3>
                     <h4>Adobe Photoshop</h4>
                     <div class="progress">
                         <div style="width:100%"></div>
@@ -130,18 +155,18 @@
                 </div>
 
                 <div class="technologies-column">
-                    <h3>Idiomas</h3>
-                    <h4>Castellano</h4>
+                    <h3 data-i18n="languages_knowledge">Idiomas</h3>
+                    <h4 data-i18n="languages_knowledge_spanish">Castellano</h4>
                     <div class="progress">
                         <div class="blue" style="width:100%"></div>
                     </div>
-                    <h4>Gallego</h4>
+                    <h4 data-i18n="languages_knowledge_galician">Gallego</h4>
                     <div class="progress">
                         <div class="blue" style="width:100%"></div>
                     </div>
-                    <h4>Inglés</h4>
+                    <h4 data-i18n="languages_knowledge_english">Inglés</h4>
                     <div class="progress">
-                        <div class="blue" style="width:65%"></div>
+                        <div class="blue" style="width:75%"></div>
                     </div>
                 </div>
 
@@ -153,9 +178,9 @@
     <!-- Section D: Experience -->
     <section id="about-d" class="py-4">
         <div class="container">
-            <h2 class="section-title">Experiencia</h2>
+            <h2 class="section-title" data-i18n="about_title_3">Experiencia</h2>
             <div class="bottom-line"></div>
-            <p class="lead">
+            <p class="lead" data-i18n="about_subtitle_3">
                 Actualmente esta es mi experiencia laboral
             </p>
 
@@ -163,36 +188,36 @@
                 <div class="experience-item">
                     <img src="img/studies/campusdual.jpg" alt="experience">
                     <p>
-                        <strong>Bootcamp en Desarrollo Full Stack,</strong>
+                        <strong data-i18n="experience_item_1">Bootcamp en Desarrollo Full Stack,</strong>
                         <br>
                         CampusDual TIC
                     </p>
                     <ul>
-                        <li>08/2023-11/2023 | Remoto</li>
+                        <li data-i18n="experience_date_1">08/2023-11/2023 | Remoto</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
                     <img src="img/studies/campusdual.jpg" alt="experience">
                     <p>
-                        <strong>Bootcamp en Introducción a la Programación,</strong>
+                        <strong data-i18n="experience_item_2">Bootcamp en Introducción a la Programación,</strong>
                         <br>
                         CampusDual TIC
                     </p>
                     <ul>
-                        <li>03/2023-06/2023 | Remoto</li>
+                        <li data-i18n="experience_date_2">03/2023-06/2023 | Remoto</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
                     <img src="img/studies/visualcrea.jpg" alt="experience">
                     <p>
-                        <strong>Ayudante de cámara y Posproducción,</strong>
+                        <strong data-i18n="experience_item_3">Ayudante de cámara y Posproducción,</strong>
                         <br>
                         Visual Creative
                     </p>
                     <ul>
-                        <li>05/2022-06/2022 | Valladolid, España</li>
+                        <li data-i18n="experience_date_3">05/2022-06/2022 | Valladolid, España</li>
                     </ul>
                 </div>
             </div>
@@ -202,58 +227,59 @@
     <!-- Section C: Educación -->
     <section id="about-c" class="py-4 bg-medium">
         <div class="container">
-            <h2 class="section-title">Estudios</h2>
+            <h2 class="section-title" data-i18n="about_title_4">Estudios</h2>
             <div class="bottom-line"></div>
-            <p class="lead">
+            <p class="lead" data-i18n="about_subtitle_4">
                 Estos son los estudios que he realizado
             </p>
             <div class="education">
 
                 <div>
                     <p>
-                        <strong>Bootcamp en Desarrollo Full Stack,</strong>
+                        <strong data-i18n="experience_item_1">Bootcamp en Desarrollo Full Stack,</strong>,
                         <br>
                         CampusDual TIC
                     </p>
                     <ul>
                         <li><img src="img/studies/campusdual.jpg" alt=""></li>
-                        <li>08/2023-11/2023 | Remoto</li>
+                        <li data-i18n="experience_date_1">08/2023-11/2023 | Remoto</li>
                     </ul>
                 </div>
 
                 <div>
                     <p>
-                        <strong>Bootcamp en Introducción a la Programación,</strong>
+                        <strong data-i18n="experience_item_2">Bootcamp en Introducción a la Programación,</strong>,
                         <br>
                         CampusDual TIC
                     </p>
                     <ul>
                         <li><img src="img/studies/campusdual.jpg" alt=""></li>
-                        <li>03/2023-06/2023 | Remoto</li>
+                        <li data-i18n="experience_date_2">03/2023-06/2023 | Remoto</li>
                     </ul>
                 </div>
 
                 <div>
                     <p>
-                        <strong>Máster en Cine, Comunicación e Industria Audiovisual,</strong>
+                        <strong data-i18n="experience_item_4">Máster en Cine, Comunicación e Industria Audiovisual,</strong>,
                         <br>
-                        Universidad de Valladolid
+                        <span data-i18n="experience_location_4">Universidad de Valladolid</span>
+                        
                     </p>
                     <ul>
                         <li><img src="img/studies/uva.png" alt=""></li>
-                        <li>2021-2022 | Valladolid, España</li>
+                        <li data-i18n="experience_date_4">2021-2022 | Valladolid, España</li>
                     </ul>
                 </div>
 
                 <div>
                     <p>
-                        <strong>Grado en Bellas Artes,</strong>
+                        <strong data-i18n="experience_item_5">Grado en Bellas Artes,</strong>,
                         <br>
-                        Universidad de Vigo
+                        <span data-i18n="experience_location_5">Universidad de Vigo</span>
                     </p>
                     <ul>
                         <li><img src="img/studies/uvigo.jpg" alt=""></li>
-                        <li>2017-2021 | Pontevedra, España</li>
+                        <li data-i18n="experience_date_5">2017-2021 | Pontevedra, España</li>
                     </ul>
                 </div>
 
@@ -264,9 +290,9 @@
     <!-- Section C-2: Courses -->
     <section id="about-c" class="py-3 bg-light">
         <div class="container">
-            <h2 class="section-title">Otras Formaciones</h2>
+            <h2 class="section-title" data-i18n="about_title_5">Otras Formaciones</h2>
             <div class="bottom-line"></div>
-            <p class="lead">
+            <p class="lead" data-i18n="about_subtitle_5">
                 Me gusta seguir aprendiendo, por lo que me formo activamente...
             </p>
 
@@ -275,7 +301,7 @@
 
                     <div>
                         <p>
-                            <strong>TypeScript: Tu completa guía y manual de mano,</strong>
+                            <strong data-i18n="course_item_1">TypeScript: Tu completa guía y manual de mano,</strong>,
                             <br>
                             dev/talles
                         </p>
@@ -287,7 +313,7 @@
     
                     <div>
                         <p>
-                            <strong>JavaScript Moderno: Guía para dominar el lenguaje,</strong>
+                            <strong data-i18n="course_item_2">JavaScript Moderno: Guía para dominar el lenguaje,</strong>,
                             <br>
                             dev/talles
                         </p>
@@ -299,7 +325,7 @@
     
                     <div>
                         <p>
-                            <strong>Diseño de Experiencia de Usuario (UX) de Google,</strong>
+                            <strong data-i18n="course_item_3">Diseño de Experiencia de Usuario (UX) de Google,</strong>,
                             <br>
                             Coursera
                         </p>
@@ -327,7 +353,7 @@
 
                     <div>
                         <p>
-                            <strong>GIT + GitHub: Todo un sistema de control de versiones de cero,</strong>
+                            <strong data-i18n="course_item_4">GIT + GitHub: Todo un sistema de control de versiones de cero,</strong>,
                             <br>
                             dev/talles
                         </p>
@@ -368,18 +394,32 @@
     <!-- Footer -->
     <footer id="main-footer">
         <div class="footer-content container">
-            <p>Nuria Oujo</p>
+            <p id="footer-date"></p>
             <div>
                 <div class="social">
-                    <h3>Conectemos</h3>
+                    <h3 data-i18n="footer_title">Conectemos</h3>
                     <a href="https://www.linkedin.com/in/nuriaoujo/" target="_blank"><i class="icon fab fa-linkedin-in fa-2x"></i> /nuriaoujo</a>
                     <a href="https://github.com/nuriaoujo" target="_blank"><i class="icon fab fa-github fa-2x"></i> /nuriaoujo</a>
                     <a href="mailto: oujomiguez.nuria@gmail.com" target="_blank"><i class="icon fas fa-envelope fa-2x"></i> oujomiguez.nuria@gmail.com</a>
+                </div>
+
+                <!-- Mobile Language selector -->
+                <div class="lng-mobile-selector">
+                    <div class="line-separator my-1"></div>
+                    <h3 data-i18n="footer_lang_selector">Selecciona tu idioma</h3>
+                    <p style="display: block;">
+                        <span onclick="changeLanguage('es')" data-i18n="languages_knowledge_spanish">Castellano</span>
+                         |  
+                        <span onclick="changeLanguage('en')" data-i18n="languages_knowledge_english">Inglés</span>
+                    </p>
+
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="js/about.js"></script>
+    <script src="js/update-content.js"></script>
+    
 </body>
 </html>
