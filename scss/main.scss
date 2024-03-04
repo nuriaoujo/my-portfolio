@@ -266,7 +266,8 @@ img {
                     
                     .options {
                         opacity: 0;
-                        div {
+                        a {
+                            display: block;
                             padding: 0.8rem 2rem;
                             margin: 0 0.7rem;
                             background-color: $medium-color;

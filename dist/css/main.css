@@ -496,15 +496,16 @@ img {
     flex-direction: column; }
     #about-a .about-btn > div .options {
       opacity: 0; }
-      #about-a .about-btn > div .options div {
+      #about-a .about-btn > div .options a {
+        display: block;
         padding: 0.8rem 2rem;
         margin: 0 0.7rem;
         background-color: #F3E9DD;
         transition: 0.7s all; }
-        #about-a .about-btn > div .options div:last-child {
+        #about-a .about-btn > div .options a:last-child {
           border-radius: 0 0 9px 9px;
           border-top: 1px dotted #DAB88B; }
-        #about-a .about-btn > div .options div:hover {
+        #about-a .about-btn > div .options a:hover {
           background-color: #DAB88B; }
   #about-a .about-btn .btn-2:hover {
     color: #DAB88B; }
