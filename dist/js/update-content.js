@@ -50,3 +50,6 @@ window.addEventListener('DOMContentLoaded', async () => {
     updateContent(langData);
     toggleArabicStylesheet(userPreferredLanguage);
 });
+
+// Get YEAR FOOTER
+document.getElementById("footer-date").innerHTML = `Nuria Oujo · ${new Date().getFullYear()}`;
