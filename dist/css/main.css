@@ -382,6 +382,29 @@ img {
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
+    #header-home .header-content div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem; }
+      #header-home .header-content div p {
+        margin-bottom: 0; }
+      #header-home .header-content div span {
+        font-size: 35px;
+        animation-name: write_txt;
+        animation-duration: 2.1s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite; }
+
+@keyframes write_txt {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
   #header-home li button {
     color: #FDF6EC;
     background: none;
