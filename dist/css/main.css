@@ -677,6 +677,8 @@ img {
   .footer-content div {
     display: flex;
     flex-direction: column; }
+  .footer-content .lng-mobile-selector {
+    display: none; }
 
 .social .icon {
   margin: 0.5rem 1rem;
@@ -788,6 +790,8 @@ img {
       font-size: 0.9rem; }
     #main li {
       padding: 1rem; }
+    #main li:last-child {
+      display: none; }
   #header-home {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.5) 90%), url("../img/background.svg");
     background-repeat: no-repeat;
@@ -913,9 +917,19 @@ img {
       padding: 2rem 0 0; }
   #main-footer {
     display: flex;
-    margin: auto; }
+    margin: auto;
+    height: 300px; }
     #main-footer p {
-      display: none; } }
+      display: none; }
+    #main-footer .footer-content {
+      height: 300px; }
+    #main-footer .lng-mobile-selector {
+      display: flex;
+      cursor: pointer; }
+      #main-footer .lng-mobile-selector span:hover {
+        color: #B7CADB; }
+      #main-footer .lng-mobile-selector h3 {
+        margin-bottom: 1rem; } }
 
 @media (max-height: 580px) {
   #header-home .header-content {

@@ -142,13 +142,11 @@
         flex-direction: column;
         align-items: center;
 
-        &-nav {
-            font-size: 0.9rem;
-        }
+        &-nav { font-size: 0.9rem; }
 
-        li {
-            padding: 1rem;
-        }
+        li { padding: 1rem; }
+
+        li:last-child { display: none; }
     }
 
     #header {
@@ -378,8 +376,19 @@
     #main-footer {
         display: flex;
         margin: auto;
-        p {
-            display: none;
+        height: 300px;
+        p { display: none; }
+        .footer-content { height: 300px; }
+
+        .lng-mobile-selector {
+            display: flex;
+            cursor: pointer;
+
+            & span:hover {
+                color: $contrast-color;
+            }
+
+            h3 { margin-bottom: 1rem;}
         }
     }
 
